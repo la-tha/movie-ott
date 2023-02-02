@@ -1,0 +1,14 @@
+/** @format */
+
+.btn {
+  color: var(--color-white);
+  border-radius: 8px;
+  padding: 0.5rem 3.75rem;
+}
+
+.btnPrimary{
+    background: #bb261a !important;
+}
+.btnSecondary{
+    background: #AFB2B9 !important;
+}

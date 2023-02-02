@@ -1,0 +1,118 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --trelleborg-gold: #998242;
+  --color-white:#FFFFFF
+}
+body {
+  margin: 0;
+  font-family: poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--trelleborg-gray);
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets//fonts/Poppins-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets//fonts/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets//fonts/Poppins-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./assets//fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets//fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets//fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets//fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets//fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets//fonts/Poppins-Thin.ttf") format("truetype");
+}
+
+input {
+  /* background: #333333; */
+  border-radius: 8px;
+  width: 21.125rem;
+  height: 2.5rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.authBackground{
+  /* z-index: -1; */
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(130.6deg, #130908 -32.04%, rgba(19, 9, 8, 0) -32.02%, #370C0F 100%),url("./assets/images/authBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.alignCenter{
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+@media only screen and (max-width: 850px) {
+  input{
+    width: 15rem;
+    height: 2rem;
+  }
+  .authBackground{
+    width: auto;
+    height: auto;
+  }
+}
